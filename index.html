@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - Two Player</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div id="game">
+            <h2>Player <span id="currentPlayer">1</span>, make your move!</h2>
+            <div class="choices">
+                <div class="choice-btn" onclick="makeMove('rock')">
+                    <img src="https://i.ibb.co/xmSrR5g/rock.png" alt="Rock" class="choice-img">
+                </div>
+                <div class="choice-btn" onclick="makeMove('paper')">
+                    <img src="https://i.ibb.co/m8LLzcM/paper.png" alt="Paper" class="choice-img">
+                </div>
+                <div class="choice-btn" onclick="makeMove('scissors')">
+                    <img src="https://i.ibb.co/vXb1QLB/scissor.png" alt="Scissors" class="choice-img">
+                </div>
+            </div>
+            <div id="result" class="result"></div>
+            <button id="restart-btn" class="hidden" onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
